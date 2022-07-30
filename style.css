@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+img{
+    width: 2.5em;
+    height: 2em;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.story {
+    display: inline-flex;
+    /* background-color: brown; */
+    width: 60%;
+}
+
+.forget {
+    margin-left: 1em;
+    color: hsl(0, 0%, 81%);
+}
+
+span{
+    color: hsla(0, 0%, 81%, 0.5);
+}
+
+h3{
+    color: white;
+    font-weight: 600;
+}
+
+.grid-container {
+    width: 80%;
+    margin: 1em auto;
+    /* height: max-content; */
+}
+
+.clifford {
+    margin-bottom: 15px;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.dj{
+    color: hsl(219, 29%, 14%);
+}
+
+.walters{
+    margin-bottom: 15px;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.Harmon {
+    margin-bottom: 15px;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.abrams{
+    margin-bottom: 15px;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira {
+    margin-bottom: 15px;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+@media screen and (min-width:377px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: 
+        "header header side siu"
+        "sol lemar lemar siu"
+        ;
+        column-gap: 1em;
+    }
+    .clifford {
+        grid-area: header;
+    }
+    .walters {
+        grid-area: side;
+    }
+    .kira {
+        grid-area: siu;
+    }
+    .Harmon {
+        grid-area: sol;
+    }
+    .abrams{
+        grid-area: lemar;
+    }
+    .forget {
+        width: 15em;
+    }
+
+}
+
+
+
+
